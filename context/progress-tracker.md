@@ -9,7 +9,7 @@ change.
 
 ## Current Goal
 
-- Feature spec 02 (TBD — check `context/feature-specs/`)
+- Feature spec 03 (TBD — check `context/feature-specs/`)
 
 ## Completed
 
@@ -21,13 +21,19 @@ change.
   - Added full dark theme CSS custom properties to `globals.css` (project tokens + shadcn semantic tokens)
   - `npm run build` passes — all components import without errors
 
+- **Feature spec 02: Editor Chrome**
+  - Created `components/editor/editor-navbar.tsx` — fixed-height top navbar (h-12, z-40) with sidebar toggle using `PanelLeftOpen`/`PanelLeftClose` icons; accepts `isSidebarOpen` + `onToggleSidebar` props
+  - Created `components/editor/project-sidebar.tsx` — floating overlay sidebar (z-30, fixed, does not push content); slides in/out via `translate-x` transition; accepts `isOpen` + `onClose` props; has Projects header, My Projects / Shared tabs with empty placeholder states, and full-width New Project button at bottom
+  - Created `components/editor/editor-dialog.tsx` — reusable dialog shell using project tokens (`bg-bg-elevated`, `text-text-primary`, `text-text-muted`, `rounded-3xl`); accepts `title`, `description`, `footer`, `children`, `open`, `onOpenChange`; ready for future dialog implementations
+  - `npm run build` passes — no TypeScript or lint errors
+
 ## In Progress
 
 - None.
 
 ## Next Up
 
-- Feature spec 02 (TBD — check `context/feature-specs/`)
+- Feature spec 03 (TBD — check `context/feature-specs/`)
 
 ## Open Questions
 
